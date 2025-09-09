@@ -1,7 +1,9 @@
 """
 Influenza ABM Simulation
 ==========================================================
+Main Execution Script for Influenza ABM Simulation. Execute this file to start the simulation.
 
+==========================================================
 This module implements an agent-based model for influenza transmission in Hong Kong
 using the Covasim framework (https://github.com/InstituteforDiseaseModeling/covasim).
 It simulates six influenza seasons (2009-2013) in Hong Kong and
@@ -521,6 +523,7 @@ if __name__ == "__main__":
                 main_simulation(begin_seed, run_times)                  # Run simulation with calibrated parameters
         else:
             main_simulation(begin_seed, run_times)                      # Run simulation with intervention parameters
+
 
 
 
