@@ -7,24 +7,25 @@ Influenza_ABM_HK is an agent-based modeling framework adapted from Covasim (v3.1
 
 ## **Repository Structure**
 
+```text
 respiratory/
 ├── code/
-│ ├── Covasim_Flu_Modification/ # Modified Covasim framework for influenza
-│ │ ├── README.md # Details of modifications
-│ │ ├── MODIFICATIONS.md # Detailed change log
-│ │ ├── parameters.py
-│ │ ├── analysis.py
-│ │ ├── immunity.py
-│ │ ├── people.py
-│ │ ├── population.py
-│ │ └── sim.py
-│ └── example/ # Example scripts for running simulations
-│ ├── README.md # Instructions for example usage
-│ ├── run_Season.py # Main simulation script
-│ ├── base_func.py # Utility functions
-│ ├── base_data.py # Seasonal datasets
-│ └── base_subgroup.py # Population subgroup definitions for interventions
-└── data/ # Required input datasets
+│   ├── Covasim_Flu_Modification/  # Modified Covasim framework for influenza
+│   │   ├── README.md              # Details of modifications
+│   │   ├── MODIFICATIONS.md       # Detailed change log
+│   │   ├── parameters.py
+│   │   ├── analysis.py
+│   │   ├── immunity.py
+│   │   ├── people.py
+│   │   ├── population.py
+│   │   └── sim.py
+│   └── example/                   # Example scripts for running simulations
+│       ├── README.md              # Instructions for example usage
+│       ├── run_Season.py          # Main simulation script
+│       ├── base_func.py           # Utility functions
+│       ├── base_data.py           # Seasonal datasets
+│       └── base_subgroup.py       # Population subgroup definitions for interventions
+└── data/                          # Required input datasets
 
 ---
 
