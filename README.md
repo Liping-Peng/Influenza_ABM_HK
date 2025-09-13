@@ -5,10 +5,10 @@ Influenza_ABM_HK is an agent-based modeling framework adapted from Covasim (v3.1
 
 ---
 
-## **Repository Structure**
+## **Structure**
 
 ```text
-respiratory/
+Influenza_ABM_HK/
 ├── code/
 │   ├── Covasim_Flu_Modification/  # Modified Covasim framework for influenza
 │   │   ├── README.md              # Details of modifications
