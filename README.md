@@ -9,23 +9,33 @@ Influenza_ABM_HK is an agent-based modeling framework adapted from Covasim (v3.1
 
 ```text
 Influenza_ABM_HK/
-├── code/
-│   ├── Covasim_Flu_Modification/  # Modified Covasim framework for influenza
-│   │   ├── README.md              # Details of modifications
-│   │   ├── MODIFICATIONS.md       # Detailed change log
-│   │   ├── parameters.py
-│   │   ├── analysis.py
-│   │   ├── immunity.py
-│   │   ├── people.py
-│   │   ├── population.py
-│   │   └── sim.py
-│   └── example/                   # Example scripts for running simulations
-│       ├── README.md              # Instructions for example usage
-│       ├── run_Season.py          # Main simulation script
-│       ├── base_func.py           # Utility functions
-│       ├── base_data.py           # Seasonal datasets
-│       └── base_subgroup.py       # Population subgroup definitions for interventions
-└── data/                          # Required input datasets
+├── README.md                         # Project overview
+├── Covasim_Flu_Modification/         # Modified Covasim framework for influenza 
+│   ├── README.md                     # Details of modifications
+│   ├── MODIFICATIONS.md              # Detailed change log
+│   ├── parameters.py
+│   ├── analysis.py
+│   ├── immunity.py
+│   ├── people.py
+│   ├── population.py
+│   └── sim.py               
+└── example/                          # Example
+    ├── README_example.md             # Details of example
+    ├── data/                         # Required input datasets
+    │   ├── data_season1.xlsx         # Daily cases & school absenteeism
+    │   ├── HAI_distribution.csv      # HAI titer protection distributions
+    │   ├── vac_coverage.csv          # Vaccine coverage
+    │   └── Season1_calib_param.xlsx  # Calibration results
+    ├── code/                         # Example scripts for running simulations 
+    │   ├── README.md                 # Instructions for example usage
+    │   ├── run_Season.py             # Main simulation script
+    │   ├── base_func.py              # Utility functions
+    │   ├── base_data.py              # Seasonal datasets
+    │   └── base_subgroup.py          # Population subgroup definitions for interventions
+    └── result/                       # Example of result output 
+        ├── figure                    # Example plot 
+        ├── save_sim                  # Saved Covasim simulation object
+        └── sims_detail               # Summary outputs
 ```
 ---
 
@@ -67,7 +77,7 @@ Replace the following core files in the original Covasim installation with the m
 Navigate to the example folder:
 
 ```
-cd code/example
+cd example/code
 python run_Season.py
 ```
 
